@@ -21,3 +21,7 @@ cursor.execute("insert into test_db.test_data values(01, 'Guru', 'singhguru9@gma
 cursor.execute("insert into test_db.test_data values(02, 'Pratik', 'prakkyadac88@gmail.com',23000000,100)")
 # # When handling data in database always commit the changes to made  
 mydb.commit()
+
+cursor.execute("select * from test_db.test_data")
+for i in cursor.fetchall():
+    print(i)
