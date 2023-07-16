@@ -25,3 +25,4 @@ mydb.commit()
 cursor.execute("select * from test_db.test_data")
 for i in cursor.fetchall():
     print(i)
+
