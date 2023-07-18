@@ -32,7 +32,7 @@ print(table_db)
 new_table = "alter table test_db.test_data add column salary int (40), add column attendence varchar (8)"
 cursor.execute(new_table)
 
-# 2:25:47
+# 2:45:47
 mydb.commit()
 
 ## Select, update, insert, delete, alter, drop, procedures, set, show databases
