@@ -37,3 +37,5 @@ cursor.execute('describe bank_market.bank_details')
 print(cursor.fetchall())
 
 # mydb.commit()
+
+# Subquery, Query inside a query, view, inner join, left, right join, drop database, drop table, 
