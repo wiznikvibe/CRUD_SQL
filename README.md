@@ -43,3 +43,34 @@ Viewing Data: The simplest way to view data from the table is using the SELECT s
     You can also view data from all columns using
 
     SELECT * FROM `offices`;
+
+
+#### Querying with WHERE
+    ``We can add a WHERE clause to a SELECT statement to select just the rows satisfying the given clause. Here's an example:
+
+    SELECT * FROM `employees` WHERE `jobTitle`="Sales Rep";
+    Note that values with spaces must be placed within quotes e.g. "Sales Rep".
+
+    The WHERE clause supports the following operators:
+
+    =
+    >
+    <
+    >=
+    <=
+    <> or !=
+    BETWEEN
+    LIKE
+    IN
+    Expressions within a WHERE clause can be combined using AND and OR.
+
+    SELECT column1, column2, ...
+    FROM table_name
+    WHERE condition1 AND condition2 AND condition3 ...;
+    An expression within a WHERE clause can be negated using NOT.``
+
+SELECT column1, column2, ...
+FROM table_name
+WHERE NOT condition;
+> You can use a WHERE clause with SELECT, UPDATE, and DELETE statements
+
